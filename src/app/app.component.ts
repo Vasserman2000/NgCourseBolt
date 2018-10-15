@@ -2,8 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  template: `
+  <app-todo-header></app-todo-header>
+  <app-todo-list></app-todo-list>
+  `
 })
 export class AppComponent {
   title = 'angular-course-boltinc';

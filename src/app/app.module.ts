@@ -2,15 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { ProgressBar } from './progress-bar.component';
+import { Header } from './todo-header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TodoList } from './todo-list.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProgressBar,
+    Header,
+    TodoList
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, ProgressBar, Header, TodoList]
 })
 export class AppModule { }
